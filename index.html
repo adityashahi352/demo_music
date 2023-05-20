@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container"> 
+    <div class="nav"><img src="image/kids-2321161__340.webp" class="logo" >
+    <ul>
+        <h1>
+            <li> <a href="#">Home</a> </li> &nbsp; &nbsp;
+            <li> <a href="#"> About</a> </li> &nbsp; &nbsp; &nbsp; &nbsp;
+            <li> <a href="#">Specifications</a> </li> &nbsp; &nbsp;
+            <li> <a href="#">Products</a> </li> &nbsp; &nbsp;
+            <li> <a href="#">Connect</a> </li> &nbsp; &nbsp;
+        </h1>
+    </ul>
+    </div>
+    <div class="content">
+        <div class="left-col">
+            <h1>The <br> <br></b> <br> Inner <br> <br> <br> Sound</h1>
+        </div>
+        <div class="right-col">
+            <p> Click Here to Listen</p> &nbsp; &nbsp;
+            <img src="image/play.png" id="icon">
+        </div>
+    </div>
+         </div>
+         <audio id="mysong" src="image/02 - Ijazat - DownloadMing.SE.mp3"></audio>
+         <script>
+            var mysong = document.getElementById("mysong");
+            var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                if(mysong.paused){
+                    mysong.play();
+                    icon.src = "image/paused.png";
+                }else{
+                    mysong.pause();
+                    icon.src = "image/play.png";
+                }
+            }
+         </script>
+
+</body>
+</html>
